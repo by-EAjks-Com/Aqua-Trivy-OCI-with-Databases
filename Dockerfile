@@ -1,5 +1,5 @@
-#   Trivy Offline
-#   Copyright (C) 2025-2026 Andrea and Eric DELAGE <Contact@by-EAjks.Com>
+#   Aqua Trivy OCI with Databases
+#   Copyright (C) 2026 Andrea and Eric DELAGE <Contact@by-EAjks.Com>
 #
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -23,6 +23,6 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN trivy image --no-progress --download-db-only && \
     trivy image --no-progress --download-java-db-only
 
+ENV TRIVY_CACHE_DIR=/root/.cache/trivy
 ENV TRIVY_SKIP_DB_UPDATE=true
 ENV TRIVY_SKIP_JAVA_DB_UPDATE=true
-ENV TRIVY_CACHE_DIR=/root/.cache/trivy

@@ -1,8 +1,3 @@
-# Trivy Offline
+# Aqua Trivy OCI with Databases
 
-Container images to develop Go applications.
-
-```powershell
-docker build --file ./Dockerfile --tag trivy-offline:latest .
-docker run --rm trivy-offline:latest image alpine:3.19
-```
+Official Aqua Trivy container image with databases downloaded on a regular basis for offline environments.
