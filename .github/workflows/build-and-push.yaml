@@ -73,7 +73,7 @@ jobs:
         uses: docker/build-push-action@v6.19.2
         with:
           context: .
-          file: ./Definitions/Core/Dockerfile
+          file: ./Dockerfile
           tags: ${{steps.extract-metadata.outputs.tags}}
           labels: ${{steps.extract-metadata.outputs.labels}}
           push: true
