@@ -20,8 +20,8 @@ LABEL maintainer="by-EAjks.Com <Contact@by-EAjks.Com>"
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN trivy image --no-progress --download-db-only && \
-    trivy image --no-progress --download-java-db-only
+RUN trivy image --no-progress --download-db-only \
+ && trivy image --no-progress --download-java-db-only
 
 ENV TRIVY_CACHE_DIR=/root/.cache/trivy
 ENV TRIVY_SKIP_DB_UPDATE=true
