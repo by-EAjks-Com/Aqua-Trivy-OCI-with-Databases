@@ -1,5 +1,5 @@
 #   Aqua Trivy OCI with Databases
-#   Copyright (C) 2026 Andrea and Eric DELAGE <Contact@by-EAjks.Com>
+#   Copyright (c) 2026 Andrea and Eric DELAGE <Contact@by-EAjks.Com>
 #
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
